@@ -1,0 +1,99 @@
+/**
+Version: 1.0.0
+*/
+
+
+/******************************
+ * BOOTSTRAP
+ ******************************/
+
+@import "styles/scss/bootstrap/bootstrap";
+
+/******************************
+ * VARIABLES
+ ******************************/
+
+@import "styles/scss/variables";
+
+/******************************
+ * HEADER
+ ******************************/
+
+@import "styles/scss/header";
+
+/******************************
+ * FOOTER
+ ******************************/
+
+@import "styles/scss/footer";
+
+
+
+/******************************
+ * ELEMENTS
+ ******************************/
+
+@import "styles/scss/textes";
+
+@import "styles/scss/button";
+
+
+/******************************
+/******************************
+/******************************
+ * PAGES
+******************************
+******************************
+******************************/
+
+
+  /******************************
+  * ACCUEIL
+  ******************************/
+  @import "styles/scss/page-accueil/sons";
+
+
+  /******************************
+  * EQUIPAGE
+  ******************************/
+
+  @import "styles/scss/page-equipage/top-equipage";
+  @import "styles/scss/page-equipage/membres-equipage";
+  @import "styles/scss/page-equipage/histoire-equipage";
+  @import "styles/scss/page-equipage/collaborateurs-equipage";
+
+  /******************************
+  * MEMBRES INDIVIDUELS
+  ******************************/
+  @import "styles/scss/membres";
+
+  /******************************
+  * CONTACT
+  ******************************/
+  @import "styles/scss/contact";
+
+
+
+
+
+
+/******************************
+ * Style
+ ******************************/
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    top:0;
+}
+
+
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}

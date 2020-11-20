@@ -1,0 +1,72 @@
+/* CONTACT */
+// LE FORMULAIRE DE CONTACT SE TROUVE DANS L'EXTENSION WORDPRESS
+
+.contact-div{
+    position: relative;
+    width: 100%;
+    top:0;
+    left: 0;
+    
+
+    .contact-top {
+        background-color: black;
+
+        .contact-top-content{
+            padding-top: 250px;
+            padding-bottom: 100px;
+
+            h1{
+                color: white!important;
+            }
+
+            .titles-custom{
+                margin: 30px auto;
+                width: 20%;
+                padding-bottom: 130px;
+            }
+
+            .text-contact {
+                width: 80%;
+                margin: auto auto;
+                text-align: center;
+            }
+            .title{
+                color: white;
+            }
+        }
+    }
+
+    .contact-form{
+        position: relative;
+        width: 80%;
+        margin: 50px auto;
+        margin-bottom: 80px;
+
+        .form-group{
+            margin: 30px auto;
+        }
+
+        .label-form{
+            padding-left: 15px;
+            color: $colorBrigade;
+        }
+
+        input, textarea{
+            border-radius: 19px;
+            opacity: 0.5;
+            background: #F3F3F3;
+            mix-blend-mode: darken;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .btn-custom {
+            opacity: 1;
+        }
+
+
+    }
+
+}
+
+

@@ -1,0 +1,186 @@
+
+
+
+///
+//HEADER COMMUN À TOUTES LES PAGES
+///
+
+.header {
+    position: absolute;
+    padding:0;
+    margin:0;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .logo {
+        width: $tailleLogo;
+    }
+}
+
+
+.top-menu {
+    z-index:2;
+    top: 50px;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+
+    .pages {
+        width: 60%;
+        text-align: center;
+        .li1 {
+            display: inline-block;
+            margin-left: 40px;
+            margin-right: 40px;
+
+            a{
+                &:hover{
+                    transition: 0.2s;
+                    color: $colorBrigade;
+                    
+                }
+            }
+
+            #equipage-title {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                    &:hover{
+                        ul{
+                            opacity: 1;
+                            transition: 0.5s;
+                            .li2{
+                                &:hover{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                .arrow {
+                    margin-left: 15px;
+                }
+                
+            }
+            ul{
+                position: absolute;
+                margin-top: 150px;
+                padding-top: 10px;
+                margin-left: -40px;
+                opacity: 0;
+                .li2 {
+                    list-style-type: none;
+                    
+                    a{
+                        font-size: 15px;
+                    }
+                }
+
+            }
+            a {
+                color: white;
+                font-size: 17px;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .reseaux {
+        display: flex;
+        align-items: center;
+        li {
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+
+///
+// HEADER DE L'ACCEUIL //
+// LE CONTENU SE TROUVE DANS parts/components/hom-top.php //
+///
+
+
+.home-top {
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left:0;
+    width:100%;
+    height: auto;
+
+
+    .background-image{
+        z-index: 1;
+        position: relative;
+        width: 100%;
+        top: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .content-section {
+        z-index: 5;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+        margin-left: 50px;
+        justify-content: space-evenly;
+        top: 42%;
+
+        .content-section__logo{
+            width: $tailleLogo2;
+            height: 200px;
+            img {
+                width: $tailleLogo2;
+            }
+        }
+        .content-section-description{
+            width: 34%;
+            color: white;
+            .content-section-description__text{
+                
+            }
+            .content-section-description__button{
+                button {
+                    display: flex;
+                    justify-content: space-evenly;
+                    p, .arrow {
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    #arrow-scroll {
+        background-image: url('../../assets/images/accueil/top/scroll.svg');
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        z-index: 6;
+        position: relative;
+        top: -50px;
+        text-align: center;
+        svg {
+            color: black;
+        }
+    }
+}
+
+
+
+
+
+
+

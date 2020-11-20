@@ -1,0 +1,43 @@
+
+
+    h3 {
+        color: white;
+        font-size: 24px!important;
+        font-weight: 500!important;
+        line-height: 25px;
+    }
+
+    p {
+        color: white;
+        font-size: 17px!important;
+        font-weight: 400!important;
+        line-height: 27px;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 48px;
+        color: black;
+    }
+
+
+    .titles-custom{
+        z-index: 100;
+        padding-bottom: 90px;
+        .reflect-custom {
+            z-index: 1!important;
+            font-weight: 700;
+            font-size: 48px!important;
+            -webkit-text-stroke: 1px #017B82;
+            color:transparent;
+            transform: translate(3%, 7%);
+            position: absolute
+        }
+        .title-custom{
+            position: absolute;
+            z-index: 5!important;
+            font-weight: 700!important;
+            font-size: 48px!important;
+            //position: absolute;
+        }
+    }

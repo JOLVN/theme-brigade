@@ -1,0 +1,53 @@
+.footer {
+    position: relative;
+    width: 100%;
+    color: black;
+    text-align: center;
+    margin: 50px auto;
+
+    .footer-line{
+        margin: 30px auto;
+        border: 1.5px solid $colorBrigade;
+        background-color: $colorBrigade;
+        width: 100%;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+        &:hover{
+            color: $colorBrigade;
+        }
+    }
+
+    h3{
+        color: black;
+        font-size: 15px!important;
+        font-weight: 600;
+    }
+
+    .second-title{
+        margin: 20px auto;
+        ul{
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            font-weight: 500;
+            font-size: 13px;
+        }
+    }
+
+    .mentions{
+        margin: 20px auto;
+        a{
+            font-size: 13px;
+            text-decoration: underline;
+        }
+    }
+
+
+
+}

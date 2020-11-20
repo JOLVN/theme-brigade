@@ -1,0 +1,138 @@
+/* CLIP */
+.home-sons{
+
+
+    .titles {
+        width: 100%;
+        height: 20vh;
+        position: relative;
+    }
+    .title { 
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 2.5em;
+        position: absolute;
+        left: 50%;
+        top:25%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    .reflect {
+        -webkit-text-stroke: 1px #017B82;
+        color:transparent;
+        transform: translateX(-45%) translateY(10%);
+        z-index: 1;
+    }
+
+    .image_bf { 
+        width : 100%; 
+        height: auto; 
+    }
+
+    .home-titles {
+        width: 100%;
+        height: 10vh;
+        position: relative;
+    }
+    .home-title { 
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 2.5em;
+        position: absolute;
+        left: 10%;
+        z-index: 2;
+    }
+    .home-reflect {
+        -webkit-text-stroke: 1px #017B82;
+        color:transparent;
+        transform: translateX(5%) translateY(10%);
+        z-index: 1;
+    }
+
+
+    .container-sons{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .glide__slides{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+
+    .glide__slide{
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 50px 0px;
+    }
+    .glide__slide{
+
+    }
+
+    .glide__slide--active img{
+        -webkit-box-shadow: 4px 4px 25px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 4px 25px 0px rgba(0,0,0,0.75);
+        box-shadow: 4px 4px 25px 0px rgba(0,0,0,0.75);
+        
+        transition-duration: 500ms;
+
+    }
+    .glide__slide--active img:hover{
+        filter: brightness(50%);
+    }
+    .top{
+        display: flex;
+        justify-content: flex-end ;
+        margin: 0 5% 0 0;
+    }
+
+    .glide__arrows {
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        width: 48px;
+        height: 29px;
+    }
+
+
+    .glide__arrows svg{
+        z-index: 2;
+        height: 100%;
+    }
+    .glide__arrows svg:hover{
+        fill:#017B82 ;
+        cursor: pointer;
+    }
+
+    .glide__arrow--right{
+        transform: scaleX(-1);
+    }
+
+    .glide__bullets{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .container-btn-sons{
+        margin: auto;
+        margin-top: -30px;
+        padding-bottom: 50px;
+        text-align: center;
+
+        .btn-sons{
+            font-size: 15px;
+            width: 170px!important;
+        }
+    }
+
+
+
+
+}

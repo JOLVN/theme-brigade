@@ -1,0 +1,90 @@
+
+.page-membre{
+
+    .membre-description{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: black;
+        padding-top: 250px;
+        padding-bottom: 50px;
+
+        .membre-description__content{
+            margin: 50px auto;
+
+            .membre-images{
+                position: absolute;
+                width: 80%;
+                height: 10%;
+
+                .photo-membre{
+                    z-index: 2;
+                    position: relative;
+                    width: 90%;
+                    height: 85%;
+                    float: left;
+                }
+
+                .pochette{
+                    z-index: 1;
+                    position: relative;
+                    width: 90%;
+                    height: 85%;
+                    bottom: 0;
+                    float: right;
+                }
+                img{
+                    width: 100%;
+
+                }
+            }
+
+            .membre-description{
+
+                color: white!important;
+                margin-top: -250px;
+
+                .element{
+                    padding: 15px 0;
+                }
+
+                h1{
+                    color: white;
+                    font-size: 35px;
+                }
+
+                h2{
+                    p{
+                        font-weight: 500!important;
+                        color: $colorBrigade;
+                        font-size: 24px!important;
+                    }
+                }
+
+
+                p{
+                    color: white;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+
+    .membre-gallerie{
+        width: 70%;
+        margin: 70px auto;
+
+        .col{
+            margin: 20px;
+            img{
+                width: 100%;
+            }
+        }
+        
+    }
+
+}

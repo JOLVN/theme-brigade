@@ -1,0 +1,144 @@
+.equipage-membres{
+    
+    margin: 50px auto;
+
+    .membre{
+
+        margin: 150px auto;
+
+        .left{
+            position: relative;
+        
+            .membre-images{
+                position: absolute;
+                width: 66%;
+                height: 23%;
+
+
+
+                .photo-membre{
+                    z-index: 2;
+                    position: relative;
+                    width: 83%;
+                    height: 85%;
+                }
+
+                .pochette{
+                    z-index: 1;
+                    position: relative;
+                    width: 83%;
+                    height: 85%;
+                    bottom: 0;
+
+                    .nom-membre-pochette{
+                        -webkit-text-stroke: 1px white;
+                        color: transparent;
+                    }
+ 
+
+                    h1{
+                        color: white;
+                        margin-top: -45px;
+                        left: 40%;
+                        transform: translateX(27%);
+                        font-size: 1.5em;
+                        font-weight: 600;
+                        fill: rgba(0,0,0,0);
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                }
+
+                img{
+                    width: 100%;
+
+                }
+            }
+        }
+
+
+        .membre-description{
+
+            width: 50%;
+            color: black!important;
+
+            .element{
+                padding: 15px 0;
+            }
+
+            h1{
+                font-size: 35px;
+                font-weight: 600;
+            }
+
+            h2 {
+                p{
+                    font-size: 26px!important;
+                    font-style: italic;
+                }
+            }
+
+
+            p{
+
+                color: black;
+                font-size: 17px;
+            }
+
+            .btn-custom{
+                border-radius: 0px !important;
+                border: 2px solid #017B82;
+                box-sizing: border-box;
+                font-family: Poppins;
+                font-weight: 500;
+                font-size: 21px;
+                width: 150px;
+                height: 44px;
+                color: $colorBrigade;
+            }
+        }
+    
+    }
+
+    .membre-left{
+        .membre-images{
+            left:0;
+        }
+        .photo-membre{
+            float: left;
+        }
+        .pochette{
+            float: right;
+        }
+    }
+
+
+    .membre-right{
+
+        .membre-images{
+            right:0;
+        }
+        .photo-membre{
+            float: right;
+        }
+        .pochette{
+            float: left;
+        }
+    }
+
+
+    #nom-benhabsxv{
+        left: 40%;
+        transform: translateX(23%);
+    }
+
+    #nom-kams{
+        left: 40%;
+        transform: translateX(35%);
+    }
+
+    #nom-krystal{
+        left: 40%;
+        transform: translateX(15%);
+    }
+}
+

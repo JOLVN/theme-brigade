@@ -1,0 +1,34 @@
+{
+  "name": "themename",
+  "version": "1.0.0",
+  "description": "themename theme",
+  "devDependencies": {
+    "@wordpress/browserslist-config": "^2.2.2",
+    "autoprefixer": "^9.7.6",
+    "chokidar-cli": "^1.2.1",
+    "core-js": "^3.6.5",
+    "node-sass": "^4.14.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.3",
+    "postcss-cli": "^6.0.1"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+  "scripts": {
+    "build": "run-s \"build:*\"",
+    "watch": "run-p \"watch:*\"",
+    "build:css": "run-p \"build:css:*\"",
+    "build:css:style": "node-sass style.scss style.css --output-style compressed && postcss -r style.css",
+    "build:css:style-editor": "node-sass style-editor.scss style-editor.css --output-style compressed && postcss -r style-editor.css",
+    "build:css:print": "node-sass print.scss print.css --output-style compressed && postcss -r print.css",
+    "build:js": "parcel build ./js/main.js -d javascript --no-source-maps",
+    "watch:css": "chokidar \"**/*.scss\" -c \"npm run build:css\"",
+    "watch:js": "parcel watch ./js/main.js -d javascript --no-source-maps"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "mitt": "^1.2.0",
+    "regenerator-runtime": "^0.13.5"
+  }
+}

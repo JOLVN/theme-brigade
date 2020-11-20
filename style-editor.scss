@@ -1,0 +1,60 @@
+/******************************
+ * Imports
+ ******************************/
+@import "styles/utils/variables";
+
+.mceContentBody {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: 20px;
+  color: $color_black;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 31px;
+
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  a {
+  }
+
+  // List
+  ul, ol {
+    padding-left: 20px;
+  }
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+
+  // Image
+  img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+
+    &.size-full {
+      width: 100%;
+    }
+
+    &.aligncenter {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &.alignright {
+      display: block;
+      margin-left: auto;
+    }
+  }
+}
